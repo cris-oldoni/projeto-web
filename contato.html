@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+	<meta name="keywords" content="viagem, dicas de viagem, roteiro, paris, amsterdam, bruxelas, roma, florença"/>
+	<meta name="description" content="Dicas e roteiros de viagens, por Cris Oldoni."/>
+	<link rel="shortcut icon" type="image/x-icon" href="imagens/icone-viagem.png"/>
+	<title>Fale conosco</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/formulario.css"/>
+</head>
+
+<body>
+<div id="interface">
+	<header id="cabecalho">
+		<hgroup>
+			<h1>Minha viagem</h1><br/>
+			<h2>por Cris Oldoni</h2>
+		</hgroup>
+		<nav id="menu">
+			<h1>Menu Principal</h1>
+			<ul>
+				<li><a href="index.html" target="_self">Home</a></li>
+				<li><a href="roteiros.html" target="_self">Roteiros</a></li>
+				<li><a href="sobre.html" target="_self">Sobre</a></li>
+				<li><a href="contato.html" target="_self">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<p>O objetivo desta página é ensinar você a planejar sua própria viagem. 
+	<p>Porém, se você não tem tempo, ou paciência, ou ambos, e ainda assim deseja fazer uma viagem personalizada, programada de acordo com os seus gostos e interesses, você pode adquirir um dos nossos pacotes. 
+	<p>Preencha seus dados no formulário abaixo, com a opção de pacote escolhido, e clique em ENVIAR, que entraremos em contato com você para dar prosseguimento ao planejamento da sua viagem.
+	<br/>
+	<p><table id="tabelapacotes">
+		<caption>Pacotes de Planejamento <span>Dez/2020</span></caption>
+		<tr><td class="pacote">Básico</td><td>Planejamento do roteiro. Você receberá um folder com resumo do roteiro para carregar na bolsa/carteira e um documento com os detalhes do roteiro. Opcionalmente, pode incluir indicações de hotéis e cias. aéreas.</td></tr>
+		<tr><td class="pacote">Especial</td><td>Básico + reservas de passagens (podendo incluir trens) + reserva de hotéis.</td></tr>
+		<tr><td class="pacote">Premium</td><td>Especial + reservas de restaurantes, atrações, passeios e shows, traslados de/para aeroportos e suporte ao viajante durante seu período de viagem.</td></tr>
+	</table>
+	<br/>
+	
+	<form method="post" id="fContato" action="php/dados.php">
+		<fieldset id="usuario"><legend>Identificação</legend>
+			<p><label for="cNome">Nome: </label><input type="text" name="nome" id="cNome" size="60%" maxlength="74" placeholder="Nome Completo" required />
+			<p><label for="cEmail">E-mail: </label><input type="email" name="email" id="cEmail" size="60%" maxlength="45" placeholder="E-mail" required />
+			<p><label for="cNasc">Data de Nasc.: </label><input type="date" name="nasc" id="cNasc" required /> &nbsp &nbsp &nbsp &nbsp &nbsp
+			<label for="cFone">Telefone: </label><input type="tel" name="fone" id="cFone" size="16%" maxlength="14" placeholder="(XX)XXXXX-XXXX" required />
+			<p><label for="cCid">Cidade: </label><input type="text" name="cid" id="cCid" size="25%" maxlength="40" placeholder="Cidade" list="cidades" required />
+				<datalist id="cidades">
+					<option value="Brasília"></option>
+					<option value="Cuiabá"></option>
+					<option value="Curitiba"></option>
+					<option value="Londrina"></option>
+					<option value="Rio de Janeiro"></option>
+					<option value="São Paulo"></option>
+				</datalist>
+			<label for="cEst">Estado: </label><select name="est" id="cEst" required >
+				<optgroup label="Centro-Oeste">
+					<option value="DF">Distrito Federal</option>
+					<option value="GO">Goiás</option>
+					<option value="MT" selected>Mato Grosso</option>
+					<option value="MS">Mato Grosso do Sul</option>
+				</optgroup>
+				<optgroup label="Nordeste">
+					<option value="AL">Alagoas</option>
+					<option value="BA">Bahia</option>
+					<option value="CE">Ceará</option>
+					<option value="MA">Maranhão</option>
+					<option value="PA">Paraíba</option>
+					<option value="PE">Pernambuco</option>
+					<option value="PI">Piauí</option>
+					<option value="RN">Rio Grande do NorteN</option>
+					<option value="SE">Sergipe</option>
+				</optgroup>
+				<optgroup label="Norte">
+					<option value="AC">Acre</option>
+					<option value="AP">Amapá</option>
+					<option value="AM">Amazonas</option>
+					<option value="PA">Pará</option>
+					<option value="RO">Rondônia</option>
+					<option value="RR">Roraima</option>
+					<option value="TO">Tocantins</option>
+				</optgroup>
+				<optgroup label="Sudeste">
+					<option value="ES">Espírito Santo</option>
+					<option value="MG">Minas Gerais</option>
+					<option value="RJ">Rio de Janeiro</option>
+					<option value="SP">São Paulo</option>
+				</optgroup>
+				<optgroup label="Sul">
+					<option value="PR">Paraná</option>
+					<option value="RS">Rio Grande do Sul</option>
+					<option value="SC">Santa Catarina</option>
+				</optgroup>
+				<option></option>
+			</select></p>
+		</fieldset>
+		<fieldset id="pacote"><legend>Opção escolhida</legend>
+			<input type="radio" name="pac" id="cBas" value="bas" checked/><label for="cBas">Básico</label><br/>
+			<input type="radio" name="pac" id="cEsp" value="esp"/><label for="cEsp">Especial</label><br/>
+			<input type="radio" name="pac" id="cPre" value="pre"/><label for="cPre">Premium</label>
+		</fieldset>
+		<fieldset id="mensagem"><legend>Mensagem (opcional)</legend>
+			<textarea name="msg" id="cMsg" rows="5" placeholder="Deixe aqui sua mensagem: podem ser os lugares para onde deseja ir, quanto tempo pretende ficar, seus principais interesses..."></textarea>
+		</fieldset>
+		<input type="image" id="enviar" src="imagens/botaolaranja.png" onmouseover="mudaCor()" onmouseout="voltaCor()"/>
+	</form>
+	<script>
+		function mudaCor() {
+			document.getElementById("enviar").src="imagens/botaoverde.png";
+		}
+		function voltaCor() {
+			document.getElementById("enviar").src="imagens/botaolaranja.png";
+		}
+	</script>	
+	<p></p>
+	<footer id="rodape">
+		<p>Copyright &copy; 2020 - by Cris Oldoni<br/>
+		<a href="http://instagram.com/viagemcomacris" target=_blank>Instagram</a></p>
+	</footer>
+</div>
+</body>
+</html>

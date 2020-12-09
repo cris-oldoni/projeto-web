@@ -1,0 +1,97 @@
+/* Folha de Estilo da Seção Roteiros*/
+
+@charset "UTF-8";
+
+ul#lista-roteiros {
+	width: 98%;
+	margin: 0px auto;
+	padding: 0px 20px 20px 20px;
+	overflow: hidden;
+	list-style: none;
+}
+
+ul#lista-roteiros li {
+	float: left;
+	width: 21.5%;
+	height: 150px;
+	margin: 10px;
+	border: 2px solid white;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	-webkit-transition: all .2s ease-in;
+}
+
+ul#lista-roteiros li span {
+	opacity: 1;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	background-color: rgba(0,0,0,.3);
+	font-size: 10pt;
+	line-height: 272px;
+	text-align: center;
+	padding: 5px;
+}
+
+ul#lista-roteiros li:hover {
+	-webkit-transform: scale(1.15);
+}
+
+ul#lista-roteiros li:hover span {
+	opacity: 1;
+}
+
+ul#lista-roteiros li#rot01 {
+	background: url("../imagens/buenosaires.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 250px;
+	background-color: #ffffff;
+}
+
+ul#lista-roteiros li#rot02 {
+	background: url("../imagens/santiago.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 250px;
+	background-color: #ffffff;
+}
+
+ul#lista-roteiros li#rot03 {
+	background: url("../imagens/machupicchu.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 250px;
+	background-color: #ffffff;
+}
+
+ul#lista-roteiros li#rot04 {
+	background: url("../imagens/amsterdam.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 250px;
+	background-color: #ffffff;
+}
+
+ul#lista-roteiros li#rot05 {
+	background: url("../imagens/bruxelas.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 250px;
+	background-color: #ffffff;
+}
+
+ul#lista-roteiros li#rot06 {
+	background: url("../imagens/paris.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 250px;
+	background-color: #ffffff;
+}
+
+ul#lista-roteiros li#rot07 {
+	background: url("../imagens/roma.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 250px;
+	background-color: #ffffff;
+}
+
+ul#lista-roteiros li#rot08 {
+	background: url("../imagens/florenca.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 250px;
+	background-color: #ffffff;
+}

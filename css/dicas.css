@@ -1,0 +1,97 @@
+/* Folha de Estilo da Seção Dicas*/
+
+@charset "UTF-8";
+
+ul#lista-dicas {
+	width: 98%;
+	margin: 0px auto;
+	padding: 0px 20px 20px 20px;
+	overflow: hidden;
+	list-style: none;
+}
+
+ul#lista-dicas li {
+	float: left;
+	width: 21.5%;
+	height: 150px;
+	margin: 10px;
+	border: 2px solid white;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	-webkit-transition: all .2s ease-in;
+}
+
+ul#lista-dicas li span {
+	opacity: 1;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	background-color: rgba(0,0,0,.3);
+	font-size: 10pt;
+	line-height: 272px;
+	text-align: center;
+	padding: 5px;
+}
+
+ul#lista-dicas li:hover {
+	-webkit-transform: scale(1.15);
+}
+
+ul#lista-dicas li:hover span {
+	opacity: 1;
+}
+
+ul#lista-dicas li#dica01 {
+	background: url("../imagens/passagem.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 300px;
+	background-color: #ffffff;
+}
+
+ul#lista-dicas li#dica02 {
+	background: url("../imagens/hoteis.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 300px;
+	background-color: #ffffff;
+}
+
+ul#lista-dicas li#dica03 {
+	background: url("../imagens/roteiro.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 300px;
+	background-color: #ffffff;
+}
+
+ul#lista-dicas li#dica04 {
+	background: url("../imagens/custos.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 300px;
+	background-color: #ffffff;
+}
+
+ul#lista-dicas li#dica05 {
+	background: url("../imagens/moeda.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 300px;
+	background-color: #ffffff;
+}
+
+ul#lista-dicas li#dica06 {
+	background: url("../imagens/bagagem.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 300px;
+	background-color: #ffffff;
+}
+
+ul#lista-dicas li#dica07 {
+	background: url("../imagens/documentos.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 300px;
+	background-color: #ffffff;
+}
+
+ul#lista-dicas li#dica08 {
+	background: url("../imagens/fotosviagem.jpg") no-repeat;
+	background-position: 50% 50%;
+	background-size: 300px;
+	background-color: #ffffff;
+}

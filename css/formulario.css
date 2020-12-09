@@ -1,0 +1,90 @@
+/* Folha de Estilo da Página Contato */
+
+@charset "UTF-8";
+
+/* Formatação da Tabela */
+
+table#tabelapacotes {
+	width: 75%;
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin: auto;
+}
+
+table#tabelapacotes caption {
+	color: #404040;
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+table#tabelapacotes caption span {
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+
+table#tabelapacotes td {
+	border: 1px solid #606060;
+	padding: 10px;
+	text-align: justify;
+	vertical-align: middle;
+	background-color: rgba(255,222,173,.5);
+}
+
+table#tabelapacotes td.pacote {
+	text-align: center;
+	font-weight: bolder;
+	background-color: #f4a460;
+}
+
+/* Formatação do Formulário */
+
+form {
+	width: 76%;
+	margin: auto;
+}
+
+input, textarea {
+	font-family: Book Antiqua;
+	font-weight: normal;
+	font-size: 12pt;
+	background-color: rgba(255,255,255,.8);
+}
+
+input:hover, textarea:hover {
+	background-color: #dddddd;
+}
+
+textarea {
+	width: 99%;
+}
+
+legend {
+	text-align: center;
+}
+
+fieldset {
+	border-color: #cecece;
+	margin: 5px 0px 5px 0px;
+	width: 100%;
+}
+
+INPUT#enviar {
+	margin: 10px auto 10px auto;
+	width: 15%;
+	display: block;
+	position: relative;
+	float: center;
+	
+}
+
+option, optgroup, select {
+	font-family: Book Antiqua;
+	font-size: 12pt;
+}
+
+label {
+	padding-left: 3px;
+}

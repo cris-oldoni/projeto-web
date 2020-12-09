@@ -1,0 +1,184 @@
+/* Folha de Estilo */
+
+@charset "UTF-8";
+
+/* Formatação Geral da Interface */
+body {
+	background: url("../imagens/outono.jpg") 50% center no-repeat;
+	background-size: cover;
+}
+
+div#interface {
+	width: 70%;
+	margin: -10px auto 10px auto;
+	padding: 10px 30px 30px 30px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	background-color: rgba(255,255,255,0.8);
+}
+
+body {
+	background-color: #fffffe;
+	font-family: Book Antiqua;
+}
+
+p {
+	text-align: justify;
+	text-indent: 0px;
+}
+
+a {
+	color: #606060;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+article h1 {
+	text-align: center;
+	font-size: 15pt;
+}
+
+h4 {
+	font-size: 13pt;
+	margin-bottom: 0px;
+}
+
+/* Formatação do Cabeçalho */
+header#cabecalho {
+	background: url("../imagens/monumentos.png") no-repeat 0px 20px;
+	background-size: cover;
+	background-position: center;
+	border-bottom: 1px #606060 solid;
+	width: 100%;
+	margin-top: -40px;
+}
+
+header#cabecalho h1 {
+	font-family: Book Antiqua;
+	font-size: 25pt;
+	color: black;
+	text-shadow: 1px 1px 1px grey;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+header#cabecalho h2 {
+	text-align: right;
+	font-family: Book Antiqua;
+	font-size: 12pt;
+	color: black;
+	text-shadow: 1px 1px 1px grey;
+	padding-right: 5px;
+}
+
+/* Formatação do Menu de Navegação*/
+nav#menu {
+	display: block;
+}
+
+nav#menu h1 {
+	display: none;
+}
+
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	right: 15.5%;
+}
+
+nav#menu li {
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: -1px;
+	transition: background-color 1s;
+}
+
+nav#menu li:hover {
+	background-color: #606060;
+}	
+
+nav#menu a {
+	color: #000000;
+	text-decoration: none;
+}	
+
+nav#menu a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+/* Formatação da Seção Principal */
+section#principal {
+	display: block;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 20px;
+}
+
+section h1 {
+	text-align: center;
+}
+
+section h2 {
+	text-align: right;
+	font-size: 12pt;
+}
+
+section h3 {
+	text-align: center;
+}
+
+section h5 {
+	font-size: 13pt;
+}
+
+section li {
+	text-align: justify;
+}
+
+/* Formatação da Barra Lateral */
+aside#lateral {
+	display: block;
+	float: right;
+	padding-left: 20px;
+	text-align: justify;
+	text-indent: 0px;
+}
+
+aside h3 {
+	text-align: center;
+}
+
+aside img {
+	display: block;
+	position: relative;
+	float: right;
+	margin: 5px 0px 0px 10px;;
+	width: 50%;
+}
+
+aside li.inferior {
+	font-size: 11pt;
+}
+
+/* Formatação do Rodapé */
+footer#rodape {
+	clear: both;
+	border-top: 1px #606060 solid;
+}
+
+footer#rodape p {
+	text-align: center;
+}
+
+footer img#icone {
+	position: absolute;
+	bottom: 0%;
+	right: 18%;
+	width: 4%;
+}
